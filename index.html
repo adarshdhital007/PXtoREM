@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All PX to REM Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>All Pixels to REM Converter</h1>
+      <p>
+        Paste or type your Inline CSS , SCSS , HTML code below, and it will
+        automatically convert all pixels to rem.
+      </p>
+      <div style="display: flex; gap: 10px">
+        <textarea
+          style="height: 630px"
+          class="input_wrapper"
+          id="cssInput"
+          placeholder="Convert pixels to rem in a snap! Simply paste or type your HTML, CSS or SCSS here."
+        ></textarea>
+        <div style="height: 630px; width: 50%; padding-right: 20px">
+          <textarea
+            readonly
+            style="height: 630px"
+            id="output"
+            class="output"
+          ></textarea>
+
+          <button id="copyBtn" class="copyBtn" style="display: none">
+            Copy CSS
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer
+    style="
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    "
+  >
+    <p style="text-decoration: none; color: #94a3b8" target="_blank">
+      Created with ❤️ by
+      <a
+        style="text-decoration: none; color: #e9ecf0"
+        href="adarshkhatri.com.np"
+        target="_blank"
+        rel="no_referrer"
+      >
+        adarshdhital007
+      </a>
+    </p>
+  </footer>
+</html>
