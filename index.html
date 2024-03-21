@@ -20,19 +20,18 @@
         Paste or type your Inline CSS , SCSS , HTML code below, and it will
         automatically convert all pixels to rem.
       </p>
-      <div style="display: flex; gap: 10px">
+      <div class="textarea_wrappers">
         <textarea
-          style="height: 630px"
           class="input_wrapper"
           id="cssInput"
           placeholder="Convert pixels to rem in a snap! Simply paste or type your HTML, CSS or SCSS here."
         ></textarea>
-        <div style="height: 630px; width: 50%; padding-right: 20px">
+        <div class="output_wrapper">
           <textarea
             readonly
-            style="height: 630px"
             id="output"
             class="output"
+            placeholder="Output will be displayed here."
           ></textarea>
 
           <button id="copyBtn" class="copyBtn" style="display: none">
@@ -40,27 +39,20 @@
           </button>
         </div>
       </div>
+      <footer>
+        <p style="text-decoration: none; color: #94a3b8" target="_blank">
+          Created with ❤️ by
+          <a
+            style="text-decoration: none; color: #e9ecf0"
+            href="https://adarshkhatri.com.np"
+            target="_blank"
+            rel="no_referrer"
+          >
+            adarshdhital007
+          </a>
+        </p>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
-  <footer
-    style="
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    "
-  >
-    <p style="text-decoration: none; color: #94a3b8" target="_blank">
-      Created with ❤️ by
-      <a
-        style="text-decoration: none; color: #e9ecf0"
-        href="https://adarshkhatri.com.np"
-        target="_blank"
-        rel="no_referrer"
-      >
-        adarshdhital007
-      </a>
-    </p>
-  </footer>
 </html>

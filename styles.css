@@ -2,18 +2,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
+  background-color: #3c3b3b;
   color: #fff;
 }
 
 .container {
+  padding: 20px;
   max-width: 1300px;
   height: 800px;
   margin: 30px auto;
-  background-color: #333;
-  padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 h1 {
@@ -28,37 +26,6 @@ p {
   color: #ccc;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.input_wrapper {
-  flex: 1;
-}
-
-textarea {
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  resize: none;
-  font-size: 14px;
-  background-color: #333;
-  color: #fff;
-}
-
-.output {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #555;
-  border-radius: 4px;
-  background-color: #222;
-  overflow: auto;
-  font-size: 14px;
-  color: #fff;
-}
-
-.button_wrapper {
-  margin-top: 20px;
 }
 
 .copyBtn {
@@ -78,4 +45,56 @@ textarea {
 
 .copyBtn:active {
   background-color: #3e8e41;
+}
+
+.textarea_wrappers {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.input_wrapper {
+  width: 50%;
+  background-color: #333333;
+}
+
+.output {
+  background-color: #1a1a1a;
+}
+.output_wrapper {
+  width: 50%;
+}
+
+textarea {
+  height: 630px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  resize: none;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .input_wrapper {
+    width: 100%;
+  }
+  .textarea_wrappers {
+    flex-direction: column;
+  }
+
+  .output_wrapper {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
 }
